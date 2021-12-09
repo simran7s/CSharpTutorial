@@ -6,7 +6,13 @@ namespace CSharpTutorial
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Comment
+
+            /* 
+             Multiline comment
+             */
+
+            Console.WriteLine("Hello World");
         }
     }
 }
