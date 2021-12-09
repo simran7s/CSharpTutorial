@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CSharpTutorial
 {
@@ -6,31 +7,34 @@ namespace CSharpTutorial
     {
         static void Main(string[] args)
         {
-            //DATA TYPES
+            //String Builder
 
-            bool canVote = true;
+            StringBuilder sb = new StringBuilder();
 
-            char grade = 'A';
+            
 
-            //NUMBERS
+            //Add to sb
+            sb.Append("This is the first sentence. ");
 
-            int maxInt = int.MaxValue;
+            //Add new line at the end of the insert sentence;
+            sb.AppendLine("This is my second sentence.");
 
-            long maxLong = long.MaxValue;
+            //Add formated to sb
+            sb.AppendFormat("My name is {0} and I live in {1}", "Simran", "Brampton");
 
-            decimal maxDec = decimal.MaxValue;
+            //Make sb empty string
+            //sb.Clear(); 
 
-            float maxFloat = float.MaxValue;
+            //replace the first string with whats in the second string
+            sb.Replace("a", "e");
 
-            double maxDouble = double.MaxValue;
+            //remove from index 5 to but not including index 7. (5,6)
+            sb.Remove(5, 7);
+
+            //must convert to string
+            Console.WriteLine(sb.ToString());
 
 
-            Console.WriteLine("Max int: " + maxInt);
-
-            //defined when program is complied. BUT CANT BE CHANGED
-            var anotherName = "tom";
-
-            Console.WriteLine("Another name is {0}", anotherName);
         }
     }
 }
