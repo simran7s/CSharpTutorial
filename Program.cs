@@ -6,15 +6,31 @@ namespace CSharpTutorial
     {
         static void Main(string[] args)
         {
-            //Comment
+            //DATA TYPES
 
-            /* 
-             Multiline comment
-             */
+            bool canVote = true;
 
-            Console.WriteLine("What is your name?");
-            string name = Console.ReadLine();
-            Console.WriteLine("Hello " + name);
+            char grade = 'A';
+
+            //NUMBERS
+
+            int maxInt = int.MaxValue;
+
+            long maxLong = long.MaxValue;
+
+            decimal maxDec = decimal.MaxValue;
+
+            float maxFloat = float.MaxValue;
+
+            double maxDouble = double.MaxValue;
+
+
+            Console.WriteLine("Max int: " + maxInt);
+
+            //defined when program is complied. BUT CANT BE CHANGED
+            var anotherName = "tom";
+
+            Console.WriteLine("Another name is {0}", anotherName);
         }
     }
 }
